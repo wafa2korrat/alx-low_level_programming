@@ -11,10 +11,10 @@ int print_last_digit(int n)
 	int rez;
 
 	if (n >= 0)
-		rez = (n % 10) + 48;
+		rez = (n % 10);
 	else
-		rez = ((-1 * n) % 10) + 48;
+		rez = ((-1 * n) % 10);
 
-	_putchar(rez);
+	_putchar(rez + 48);
 	return (rez);
 }
