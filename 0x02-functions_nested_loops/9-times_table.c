@@ -17,7 +17,10 @@ void times_table(void)
 			if (num > 0 && num < 9)
 				_putchar(' ');
 			if (res <= 9)
+			{
+				_putchar(' ');
 				_putchar(res + 48);
+			}
 			else
 			{
 				_putchar((res / 10) + 48);
