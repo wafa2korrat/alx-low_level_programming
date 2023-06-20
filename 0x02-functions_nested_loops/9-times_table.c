@@ -16,6 +16,7 @@ void times_table(void)
 			rez = num * row;
 			if (rez <= 9)
 			{
+				_putchar(' ');
 				_putchar(rez + 48);
 				if (num < 9)
 				{
