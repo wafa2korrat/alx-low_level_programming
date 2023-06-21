@@ -28,7 +28,10 @@ void times_table(void)
 				_putchar((res % 10) + 48);
 				}
 			if (num != 9)
+			{
 				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
