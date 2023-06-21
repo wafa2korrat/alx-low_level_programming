@@ -22,18 +22,25 @@ void print_times_table(int n)
 				else
 					if (res <= 9)
 					{
-					_putchar(' ');
-					_putchar(res + 48);
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(res + 48);
+					}
+					else if (res >= 10 && res <= 99)
+					{
+						_putchar(' ');
+						_putchar((res / 10) + 48);
+						_putchar((res % 10) + 48);
 					}
 					else
 					{
-					_putchar((res / 10) + 48);
-					_putchar((res % 10) + 48);
+						_putchar((res / 100) + 48);
+						_putchar((res / 10) + 48);
+						_putchar((res % 10) + 48);
 					}
 				if (num != n)
 				{
 					_putchar(',');
-					_putchar(' ');
 					_putchar(' ');
 				}
 			}
