@@ -8,6 +8,7 @@
 void print_square(int size)
 {
 	int length, width;
+
 	width = size;
 	length = size;
 
@@ -18,7 +19,7 @@ void print_square(int size)
 		for (; length > 0; length--)
 		{
 			width = size;
-			for(; width > 0; width--)
+			for (; width > 0; width--)
 				_putchar(35);
 			_putchar('\n');
 		}
