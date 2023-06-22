@@ -21,6 +21,6 @@ void more_numbers(void)
 				_putchar(tens + 48);
 			_putchar(ones + 48);
 		}
-	}
 		_putchar('\n');
+	}
 }
