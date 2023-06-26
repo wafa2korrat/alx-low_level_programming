@@ -17,13 +17,13 @@ void rev_string(char *s)
 			s++;
 		}
 		_putchar('\n');
-		s--;
-		while (*s != first)
-		{
-			_putchar(*s);
-			s--;
-		}
-		_putchar(first);
-		_putchar('\n');
 	}
+	s--;
+	while (*s != first)
+	{
+		_putchar(*s);
+		s--;
+	}
+	_putchar(first);
+	_putchar('\n');
 }
