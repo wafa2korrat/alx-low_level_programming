@@ -9,8 +9,13 @@
  */
 int _strlen(char *s)
 {
-	char array_s = *s;
-	int length = sizeof(array_s);
+	int length = 0;
+
+	if (s)
+	{
+		length++;
+		s++;
+	}
 
 	return (length);
 }
