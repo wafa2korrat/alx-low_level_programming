@@ -12,9 +12,15 @@ void print_rev(char *s)
 
 	if (*s != '\0')
 	{
-		while (*s != '\0')
+		while (s[i] != '\0')
+		{
 			s++;
-	s--;
+			i++;
+		}
+		s--;
+		i--;
+		char a[i];
+
 	while (*s != first)
 	{
 		a[i] = *s;
