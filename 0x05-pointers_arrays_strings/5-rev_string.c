@@ -7,25 +7,23 @@
  */
 void print_rev(char *s)
 {
-	char first = *s;
 	int i = 0;
+	int n;
 
-	if (*s != '\0')
+	if (s[i] != '\0')
 	{
 		while (s[i] != '\0')
-		{
-			s++;
 			i++;
-		}
-		s--;
 		i--;
-		char a[i];
+		n = i;
+		char a[n];
 
-	while (*s != first)
-	{
-		a[i] = *s;
-		s--;
-		i++;
+		while (i >= 0)
+		{
+			n = 0;
+			a[n] = s[i];
+			n++;
+			i--;
+		}
 	}
-	a[i] = first;
 }
